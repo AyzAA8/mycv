@@ -5,30 +5,31 @@
 <style>
 body {
   font-family: monospace,sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url('https://img.freepik.com/premium-vector/light-tan-watercolour-background_78370-3016.jpg');
-  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210825/pngtree-textured-smudge-abstract-retro-dark-brown-background-image_767931.jpg');
   background-position: center;
 }
 
 header {
   background-image: url('https://marketplace.canva.com/EAFMLCIqQFk/1/0/1600w/canva-purple%2C-brown-abstract-shape-twitter-header-UAItyP5Mz2A.jpg');
   background-size: cover;
+  background-position: center;
   color: rgb(226, 160, 59);
-  padding: 20px;
+  padding: 50px;
   text-align: center;
 }
 
 nav {
   text-align: center;
-  background-color: #ffd90073;
+  background-color: #ffd900d3;
   padding: 10px;
 }
 
+
 nav a {
   text-decoration: none;
-  color: #af2323;
+  color: #e6e5e0;
   padding: 10px;
 }
 
@@ -48,7 +49,26 @@ progress{
   color: #d4b272;
 
 }
+nav a:hover {
+  background-color: #e6ab0a; 
+  color: rgba(255, 255, 255, 0.801);
+  cursor: pointer; 
+}
 
+.body{
+  margin: 100px;
+  padding: auto;
+}
+
+.content-container {
+  background-image: url('https://img.freepik.com/premium-vector/light-tan-watercolour-background_78370-3016.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #bd612060; 
+  border-radius: 5%;
+  margin: 10px;
+  padding: 10px;
+}
 
 .container {
 
@@ -85,25 +105,66 @@ progress{
  justify-content: space-between;
 }
 
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('—Pngtree—vector star icon_4187383.png'); 
+  background-size: cover;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  background-image: url('kisspng-clip-art-star-shape-portable-network-graphics-scal-christmas-star-filled-svg-png-icon-free-download-5b685f880ce904.5102957115335668560529.png'); /* Replace 'star-filled.png' with your filled star icon */
+  background-size: cover;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .body {
+    padding: 5px;
+  }
+}
 
 </style>
 </head>
 <body>
 
 <header>
-  <h1>My CV</h1>
+  <h1>Welcome to my timeline</h1>
+  <h2>Ayza Amjad</h2>
 </header>
 
 <nav>
   <a href="#about">About Me</a>
   <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
   <a href="#techskills">Technical Skills</a>
   <a href="#skills">Soft Skills</a>
   <a href="#contact">Contact</a>
+  <a href="#ratings">Rating</a>
 
 </nav>
 
+<div class="body">
+<div class="content-container">
 <section id="about">
   <h2>About Me</h2>
   <div class="container">
@@ -149,9 +210,11 @@ progress{
   </div>
 </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <p>Insert your experience details here...</p>
+<section id="projects">
+  <h2>Projects</h2>
+  <ol><li>1st semester project in C: Cricket score board</li>
+  <li>2nd semester project in Java: Student portal </li>
+  </ol>
 </section>
 
 <section id="techskills">
@@ -220,7 +283,21 @@ progress{
 
 </section>
 
+<section id="ratings">
+  <h2>Ratings of design</h2>
+  <div class="rating">
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+  </div>
+  
+</section>
+</div>
+</div>
 <footer>
+  <h2>Ayza Amjad</h2>
   <p>&copy; 2024 My CV. All rights reserved.</p>
 </footer>
 
